@@ -8,7 +8,6 @@ git clone https://github.com/memo600/ansible_flask_demo.git \
 && yum install python-pip -y \
 && pip install pipenv \
 && mkdir -p ansible-container-demo \
-&& cd ansible-container-demo \
 && pipenv install --ignore-pipfile \
 && pipenv install ansible-container[docker] --ignore-pipfile \
 && cp -r /root/ansible_flask_demo/ansible-container/* /root/.local/share/virtualenvs/ansible_flask_demo-b9MNhOos/lib/python2.7/site-packages/container/docker/files/ \
